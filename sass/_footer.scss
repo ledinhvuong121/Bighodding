@@ -1,0 +1,85 @@
+.footer {
+  padding-top: 154px;
+  padding-left: 140px;
+  padding-right: 35px;
+  padding-bottom: 15px;
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &-logo {
+    max-width: 216px;
+    margin-bottom: 35px;
+  }
+  &-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  &-logo1 {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+  }
+  &-desc {
+    max-width: 507px;
+    color: $color_dark;
+    font-size: 16px;
+  }
+  &-end {
+    color: #b3b3b3;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  &-contract{
+    display: flex;
+    gap: 150px;
+  }
+  &-main{
+    color: $color_main;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 70px;
+  }
+  &-text{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+  &-title{
+    color: #4D4D4D;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  &-import{
+    max-width: 315px;
+    margin-left: -30px;
+    margin-bottom: 60px;
+  }
+  &-input{
+    padding: 10px 0px 10px 20px;
+    max-width: 205px;
+    border: none;
+  }
+  &-btn{
+    color: $color_white;
+    font-size: 16px;
+    padding: 10px 17px;
+    background-color: $color_main;
+  }
+  &-bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  &-title2{
+    color: #4D4D4D;
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
