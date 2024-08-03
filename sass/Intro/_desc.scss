@@ -1,0 +1,17 @@
+.Desc{
+    margin-top: 100px;
+    margin-right: 200px;
+    margin-left: 200px;
+    max-width: 1420px;
+    &-top{
+        color: $color_dark;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    &-bottom{
+        color: $color_dark;
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 20px;
+    }
+}

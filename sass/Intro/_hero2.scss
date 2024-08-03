@@ -1,0 +1,30 @@
+.hero2{
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-bottom: 100px;
+    &-container{
+        background: rgba(0, 0, 0, 0.80);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+    }
+    &-content{
+        position: absolute;
+        content: "";
+        top: 30%;
+        transform: translateY(40%);
+        left: 35%;
+        transform: translateX(-25%);
+    }
+    &-title{
+        color: $color_white;
+        max-width: 1212px;
+        font-size: 48px;
+        font-weight: 600;
+        text-align: center;
+    }
+}

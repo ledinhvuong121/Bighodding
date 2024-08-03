@@ -1,0 +1,18 @@
+.list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    &-item{
+        max-width: 455px;
+        color: $color_main;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+        width: 100%;
+        padding: 20px 0px;
+        cursor: pointer;
+        &:hover{
+            color: $color_white;
+            background-color: $color_main;
+        }
+    }
+}

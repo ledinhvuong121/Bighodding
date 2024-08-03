@@ -1,0 +1,53 @@
+.trade{
+    &-title{
+        color: $color_main;
+        font-size: 48px;
+        font-weight: 600;
+        margin-bottom: 50px;
+    }
+    &-list{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 20px;
+        row-gap: 70px;
+        &-item{
+            padding: 0px 50px;
+            position: relative;
+            &::after{
+                width: 1px;
+                height: 300px;
+                background-color: gray;
+                position: absolute;
+                content: "";
+                right: 0;
+                top: 0;
+            }
+            &-h4{
+                color: $color_main;
+                text-align: justify;
+                font-size: 20px; 
+                font-weight: 700;
+                margin-top: 26px;
+            }
+            &-p{
+                color: $color_dark;
+                margin-top: 9px;
+                text-align: justify;
+                font-size: 16px;
+                font-weight: 400;
+            }
+            &-end{
+                margin-top: 10px;
+                display: flex;
+                align-items: center;
+                &-read{
+                    color: $color_main;
+                    margin-right: 10px;
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

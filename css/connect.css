@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  user-select: none;
+}
+
+.main {
+  padding: 80px 0px 0px 80px;
+}
+
+.title {
+  font-weight: 600;
+}
+
+.desc {
+  font-weight: 400;
+  color: #000;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Montserrat" sans-serif;
+}
+
+.header-full {
+  position: relative;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  z-index: 1000000;
+}
+.header-logo {
+  max-width: 200px;
+  width: 100%;
+  margin-left: 152px;
+}
+.header-main {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.header-ul {
+  display: flex;
+  align-items: center;
+  gap: 54px;
+}
+.header-link {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  max-width: 124px;
+  cursor: pointer;
+}
+.header-link:hover {
+  color: #C92049;
+}
+.header-img {
+  margin-right: 35px;
+  max-height: 980px;
+}
+
+.sidebar {
+  display: flex;
+  justify-content: space-between;
+  width: 80px;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100000000;
+  background-color: #fff;
+}
+.sidebar-search {
+  background-color: #0D4C79;
+  width: 100px;
+  padding: 20px;
+  cursor: pointer;
+}
+.sidebar-logo {
+  display: flex;
+  flex-direction: column;
+  max-width: 35px;
+  gap: 20px;
+}
+
+.footer {
+  padding-top: 154px;
+  padding-left: 140px;
+  padding-right: 35px;
+  padding-bottom: 15px;
+}
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-logo {
+  max-width: 216px;
+  margin-bottom: 35px;
+}
+.footer-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.footer-logo1 {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+.footer-desc {
+  max-width: 507px;
+  color: #000;
+  font-size: 16px;
+}
+.footer-end {
+  color: #b3b3b3;
+  font-size: 16px;
+  font-weight: 400;
+}
+.footer-contract {
+  display: flex;
+  gap: 150px;
+}
+.footer-main {
+  color: #0D4C79;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 70px;
+}
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.footer-title {
+  color: #4D4D4D;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.footer-import {
+  max-width: 315px;
+  margin-left: -30px;
+  margin-bottom: 60px;
+}
+.footer-input {
+  padding: 10px 0px 10px 20px;
+  max-width: 205px;
+  border: none;
+}
+.footer-btn {
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 17px;
+  background-color: #0D4C79;
+  border: none;
+  cursor: pointer;
+}
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer-title2 {
+  color: #4D4D4D;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.hero {
+  position: relative;
+}
+.hero-container {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+}
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+}
+.hero-img {
+  max-height: 980px;
+}
+.hero-tilte {
+  color: #fff;
+  font-size: 85px;
+  font-weight: 800;
+  max-width: 1331px;
+}
+.hero-content2 {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translateY(-50%);
+}
+.hero-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+.hero-main {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+.hero-intro {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration-line: underline;
+}
+
+.container {
+  padding: 100px 150px;
+}
+
+.full {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.full-jobs {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 400px;
+}
+.full-type {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.full-tick {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.full-tick span {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #0D4C79;
+}
+.full-name {
+  color: #0D4C79;
+  font-weight: 700;
+  font-size: 24px;
+}
+.full-desc {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+}
+.full-tools {
+  display: flex;
+  justify-content: space-between;
+}
+.full-input {
+  width: 800px;
+  height: 60px;
+  padding-left: 10px;
+  border: 1px solid #B3B3B3;
+}
+.full-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #0D4C79;
+  padding: 15px;
+  cursor: pointer;
+}
+.full-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.full-item {
+  padding: 30px;
+}
+.full-sp {
+  color: #0D4C79;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.full-addr {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.full-text {
+  color: #1E1E1E;
+  font-size: 14px;
+  font-weight: 400;
+}
+.full-read {
+  padding: 7px 15px;
+  background-color: #0D4C79;
+  color: #fff;
+  max-width: 120px;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 15px;
+  display: block;
+  margin-left: auto;
+}
+
+.register {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 73px;
+}
+.register-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.register-text {
+  color: #0D4C79;
+  font-size: 31px;
+  font-weight: 700;
+}
+.register-desc {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 613px;
+}
+.register-tools {
+  display: flex;
+  gap: 10px;
+}
+.register-input {
+  padding: 20px 10px;
+  width: 354px;
+  height: 60px;
+}
+.register-click {
+  padding: 14px 31px;
+  background-color: #0D4C79;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 220px;
+}
+
+/*# sourceMappingURL=connect.css.map */

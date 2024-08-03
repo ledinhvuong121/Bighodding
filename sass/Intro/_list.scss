@@ -1,0 +1,84 @@
+.list {
+  display: flex;
+  gap: 50px;
+  margin-top: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 130px;
+
+  &-item {
+    padding: 62px 25px 40px 25px;
+    background-color: $color_white;
+    box-shadow: 0px 5px 10px 0px;
+    position: relative;
+    &::after {
+      width: 5px;
+      height: 80px;
+      background-color: $color_main;
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 15%;
+    }
+    &:hover {
+      background-color: $color_main;
+      .list-title {
+        color: $color_white;
+      }
+      .list-desc {
+        color: $color_white;
+      }
+      .list-read {
+        color: $color_white;
+      }
+      &hover::after {
+        background-color: $color_white;
+      }
+    }
+  }
+  &-title {
+    color: $color_main;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    height: 80px;
+  }
+  &-desc {
+    color: $color_dark;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+    min-width: 375px;
+    margin-bottom: 30px;
+  }
+  &-end {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  &-read {
+    color: $color_main;
+    font-size: 20px;
+    font-weight: 500px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+}
+
+.list2 {
+  &-title {
+    color: $color_main;
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    margin-left: 10px;
+  }
+  &-desc {
+    color: $color_dark;
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    margin-left: 10px;
+  }
+}

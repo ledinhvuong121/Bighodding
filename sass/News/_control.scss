@@ -1,0 +1,24 @@
+
+.control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 133px;
+  margin-bottom: 54px;
+
+  &-item {
+    text-align: center;
+    color: $color_tilte;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 25px;
+    &:first-child {
+      background-color: $color_main;
+      color: $color_white;
+    }
+    &:hover {
+      background-color: $color_main;
+      color: $color_white;
+    }
+  }
+}

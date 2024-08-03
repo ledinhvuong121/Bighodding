@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="big.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,6 +10,19 @@
       rel="stylesheet"
     />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!-- Header -->
@@ -20,22 +32,24 @@
         <div class="header-main">
           <ul class="header-ul">
             <li class="header-li">
-              <a href="" class="header-link" style="color: red">Trang chủ</a>
+              <a href="index.html" class="header-link" style="color: red">Trang chủ</a>
             </li>
             <li class="header-li">
-              <a href="" class="header-link">Giới thiệu</a>
+              <a href="_intro.html" class="header-link" 
+                >Giới thiệu</a
+              >
             </li>
             <li class="header-li">
-              <a href="" class="header-link">Lĩnh vực hoạt động</a>
+              <a href="_field.html" class="header-link">Lĩnh vực hoạt động</a>
             </li>
             <li class="header-li">
-              <a href="" class="header-link">Tin tức</a>
+              <a href="_news.html" class="header-link">Tin tức</a>
             </li>
             <li class="header-li">
-              <a href="" class="header-link">Tuyển dụng</a>
+              <a href="_connect.html" class="header-link">Tuyển dụng</a>
             </li>
             <li class="header-li">
-              <a href="" class="header-link">Liên hệ</a>
+              <a href="_contact.html" class="header-link">Liên hệ</a>
             </li>
           </ul>
           <div class="header-img">
@@ -78,21 +92,60 @@
     <main class="main">
       <!-- HERO -->
       <div class="hero">
-        <img src="./images/city1.png" alt="" class="hero-img" />
         <div class="hero-container">
-          <div class="hero-content">
-            <h3 class="hero-tilte">GÓP PHẦN ĐƯA VIỆT NAM TRỞ NÊN VĨ ĐẠI</h3>
-            <button class="hero-call">Liên hệ</button>
-            <div class="hero-next">
-              <img
-                src="./images/directional.svg"
-                alt=""
-                class="hero-directional"
-              />
-              <img src="./images/pound.svg" alt="" class="hero-pound" />
+          <div class="hero-inner">
+            <div class="hero-img">
+              <img src="./images/city1.png" alt="" />
+            </div>
+            <div class="hero-content">
+              <h1 class="hero-title">ĐƯA ĐẤT NƯỚC VIỆT NAM TRỞ NÊN VĨ ĐẠI</h1>
+              <a href="#" class="hero-btn">LIÊN HỆ</a>
+            </div>
+          </div>
+          <div class="hero-inner">
+            <div class="hero-img">
+              <img src=".//images/city2.png" alt="" />
+            </div>
+            <div class="hero-content">
+              <h1 class="hero-title">ĐƯA ĐẤT NƯỚC VIỆT NAM TRỞ NÊN VĨ ĐẠI</h1>
+              <a href="#" class="hero-btn">LIÊN HỆ</a>
             </div>
           </div>
         </div>
+        <!-- <div class="hero-div">
+          <img src="./images/city1.png" alt="" class="hero-img" />
+          <div class="hero-container">
+            <div class="hero-content">
+              <h3 class="hero-tilte">GÓP PHẦN ĐƯA VIỆT NAM TRỞ NÊN VĨ ĐẠI</h3>
+              <button class="hero-call">Liên hệ</button>
+              <div class="hero-next">
+                <img
+                  src="./images/directional.svg"
+                  alt=""
+                  class="hero-directional"
+                />
+                <img src="./images/pound.svg" alt="" class="hero-pound" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-div">
+          <img src="./images/city1.png" alt="" class="hero-img" />
+          <div class="hero-container">
+            <div class="hero-content">
+              <h3 class="hero-tilte">GÓP PHẦN ĐƯA VIỆT NAM TRỞ NÊN VĨ ĐẠI</h3>
+              <button class="hero-call">Liên hệ</button>
+              <div class="hero-next">
+                <img
+                  src="./images/directional.svg"
+                  alt=""
+                  class="hero-directional"
+                />
+                <img src="./images/pound.svg" alt="" class="hero-pound" />
+              </div>
+            </div>
+          </div>
+        </div> -->
       </div>
       <!-- News -->
       <div class="news">
@@ -105,7 +158,9 @@
         </div>
         <div class="news-container">
           <div class="news-item">
-            <img src="./images/img1.png" alt="" class="news-img" />
+            <div class="news-img">
+              <img src="./images/img1.png" alt="" />
+            </div>
             <p class="news-title title">
               Chưa thông qua cấp phép vắc xin Nanocovax do thiếu dữ liệu
             </p>
@@ -121,7 +176,9 @@
             <p class="news-read">Đọc thêm</p>
           </div>
           <div class="news-item">
-            <img src="./images/img2.png" alt="" class="news-img" />
+            <div class="news-img">
+              <img src="./images/img2.png" alt="" />
+            </div>
             <p class="news-title title">
               Nhà máy “3 tại chỗ” được hỗ trợ mua lương thực
             </p>
@@ -137,7 +194,9 @@
             <p class="news-read">Đọc thêm</p>
           </div>
           <div class="news-item">
-            <img src="./images/img3.png" alt="" class="news-img" />
+            <div class="news-img">
+              <img src="./images/img3.png" alt="" />
+            </div>
             <p class="news-title title">
               Bật mí bí quyết tăng đề kháng trong mùa dịch
             </p>
@@ -156,31 +215,43 @@
       </div>
       <!-- iNTRODUCE -->
       <div class="intro">
-        <div class="intro-full">
-          <h4 class="intro-text">Giới thiệu tập đoàn</h4>
-          <h3 class="intro-title title">BIG HOLDING</h3>
-          <p class="intro-desc1 desc">
-            Big Holding là doanh nghiệp tư vấn và thực hiện đầu tư vào các lĩnh
-            vực có tầm quan trọng và ảnh hưởng thiết thực đến đời sống xã hội
-            với mục tiêu đem lại sự phát triển phồn vinh cho đất nước, cũng như
-            sự tin tưởng cho các cổ đông, nhà đầu tư.
-          </p>
-          <p class="intro-desc2 desc">
-            Với uy tín nhiều năm trên thị trường, Big Holding được các khách
-            hàng, đối tác nhớ đến là một doanh nghiệp trách nhiệm và đặt chữ tín
-            lên hàng đầu, luôn đảm bảo quyền lợi cao nhất của mỗi cá nhân, tổ
-            chức khi hợp tác và sử dụng dịch vụ của tập đoàn.
-          </p>
-          <div class="hero-next">
-            <img src="./images/pound.svg" alt="" class="hero-pound" />
-            <img
-              src="./images/directional.svg"
-              alt=""
-              class="hero-directional"
-            />
+        <div class="intro-container">
+          <div class="intro-full">
+            <h4 class="intro-text">Giới thiệu tập đoàn</h4>
+            <h3 class="intro-title title">BIG HOLDING</h3>
+            <p class="intro-desc1 desc">
+              Big Holding là doanh nghiệp tư vấn và thực hiện đầu tư vào các
+              lĩnh vực có tầm quan trọng và ảnh hưởng thiết thực đến đời sống xã
+              hội với mục tiêu đem lại sự phát triển phồn vinh cho đất nước,
+              cũng như sự tin tưởng cho các cổ đông, nhà đầu tư.
+            </p>
+            <p class="intro-desc2 desc">
+              Với uy tín nhiều năm trên thị trường, Big Holding được các khách
+              hàng, đối tác nhớ đến là một doanh nghiệp trách nhiệm và đặt chữ
+              tín lên hàng đầu, luôn đảm bảo quyền lợi cao nhất của mỗi cá nhân,
+              tổ chức khi hợp tác và sử dụng dịch vụ của tập đoàn.
+            </p>
+          </div>
+          <div class="intro-full">
+            <h4 class="intro-text">Giới thiệu tập đoàn</h4>
+            <h3 class="intro-title title">BIG HOLDING</h3>
+            <p class="intro-desc1 desc">
+              Big Holding là doanh nghiệp tư vấn và thực hiện đầu tư vào các
+              lĩnh vực có tầm quan trọng và ảnh hưởng thiết thực đến đời sống xã
+              hội với mục tiêu đem lại sự phát triển phồn vinh cho đất nước,
+              cũng như sự tin tưởng cho các cổ đông, nhà đầu tư.
+            </p>
+            <p class="intro-desc2 desc">
+              Với uy tín nhiều năm trên thị trường, Big Holding được các khách
+              hàng, đối tác nhớ đến là một doanh nghiệp trách nhiệm và đặt chữ
+              tín lên hàng đầu, luôn đảm bảo quyền lợi cao nhất của mỗi cá nhân,
+              tổ chức khi hợp tác và sử dụng dịch vụ của tập đoàn.
+            </p>
           </div>
         </div>
-        <img src="./images/img-intro.png" alt="" class="intro-img" />
+        <div class="intro_img">
+          <img src="./images/img-intro.png" alt="" class="intro-img" />
+        </div>
       </div>
       <!-- List -->
       <div class="list">
@@ -267,7 +338,9 @@
         <p class="quality-desc1">Chất lượng trong mọi công việc</p>
         <h3 class="quality-title1 title">DỰ ÁN TIÊU BIỂU</h3>
         <div class="quality-full">
-          <img src="./images/quality.png" alt="" class="quality-img" />
+          <div class="quality-img">
+            <img src="./images/quality.png" alt="" class="quality_img" />
+          </div>
           <div class="quality-text">
             <h4 class="quality-title2 title">
               Nhà máy Thực phẩm Quốc tế Thăng Long
@@ -348,6 +421,19 @@
         </div>
       </div>
     </footer>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./js/main.js"></script>
   </body>
   <!-- <script type="module" src="index.js"></script> -->
 </html>

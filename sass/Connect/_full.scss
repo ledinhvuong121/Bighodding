@@ -1,0 +1,93 @@
+.container{
+    padding: 100px 150px;
+}
+.full{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    &-jobs{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 400px;
+    }
+    &-type{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &-tick{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        & span{
+            width: 15px;
+            height: 15px;
+            border: 1px solid $color_main;
+        }
+    }
+    &-name{
+        color: $color_main;
+        font-weight: 700;
+        font-size: 24px;
+    }
+    &-desc{
+        color: $color_dark;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    &-tools{
+        display: flex;
+        justify-content: space-between;
+    }
+    &-input{
+        width: 800px;
+        height: 60px;
+        padding-left: 10px;
+        border: 1px solid #B3B3B3;
+    }
+    &-icon{
+        width: 60px;
+        height: 60px;
+        background-color:$color_main ;
+        padding: 15px;
+        cursor: pointer;
+    }
+    &-list{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-item{
+        padding: 30px;
+    }
+    &-sp{
+        color: $color_main;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+    &-addr{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    &-text{
+        color: $color_tilte;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    &-read{
+        padding: 7px 15px;
+        background-color: $color_main;
+        color:$color_white;
+        max-width: 120px;
+        font-size: 14px;
+        font-weight: 700;
+        margin-top: 15px;
+        display: block;
+        margin-left: auto;
+        
+    }
+}

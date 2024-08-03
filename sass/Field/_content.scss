@@ -1,0 +1,29 @@
+.content {
+  margin-top: 127px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  &-inner{
+    padding: 50px;
+    background-color:$color_main ;
+    position: absolute;
+    content: "";
+    left: 5%;
+  }
+  &-title {
+    color: $color_white;
+    font-size: 48px;
+    max-width: 409px;
+    margin-bottom: 31px;
+    
+   
+    
+  }
+  &-desc {
+    color: $color_white;
+    text-align: justify;
+    font-size: 16px;
+    max-width: 600px;
+  }
+}

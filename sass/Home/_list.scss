@@ -34,3 +34,15 @@
     line-height: 24px;
   }
 }
+.list1:hover{
+  .list-title{
+    color: red;
+  }
+  .list-img{
+    color: $color_red;
+  }
+  .list-read{
+    color: red;
+  }
+}
+

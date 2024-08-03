@@ -55,6 +55,7 @@
     color: #4D4D4D;
     font-size: 16px;
     font-weight: 600;
+    cursor: pointer;
   }
   &-import{
     max-width: 315px;
@@ -71,6 +72,8 @@
     font-size: 16px;
     padding: 10px 17px;
     background-color: $color_main;
+    border: none;
+    cursor: pointer;
   }
   &-bottom{
     display: flex;
@@ -81,5 +84,6 @@
     color: #4D4D4D;
     font-size: 16px;
     font-weight: 600;
+    cursor: pointer;
   }
 }
