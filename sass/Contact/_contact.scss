@@ -1,0 +1,81 @@
+.container{
+    padding: 100px 150px 0px 150px;
+}
+
+.contact{
+    margin-top: 110px;
+    &-title{
+        color: $color_main;
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 40px;
+    }
+    &-map iframe{
+    max-width: 1315px;
+    width: 100%;
+    margin-bottom: 50px;
+    }
+}
+
+.addr{
+    display: flex;
+    justify-content: space-between;
+    &-left{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    &-infor{
+        color: $color_main;
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    &-desc{
+        color: $color_dark;
+        font-size: 16px;
+        font-weight: 400;
+        max-width: 425px;
+    }
+    &-center{
+        width: 1px;
+        height: 400px;
+        background-color: #B3B3B3;
+    }
+    &-right{
+        max-width: 600px;
+        width: 100%;
+    }
+    &-input{
+        display: grid;
+        // grid-template-columns: 2;
+        // grid-template-rows: 3;
+        gap: 20px;
+        grid-template-areas: 'header header' 'content container' 'footer footer';
+    }
+    &-name{
+        grid-area: header;
+        padding: 20px 10px;
+    }
+    &-email{
+        grid-area: content;
+        padding: 20px 20px;
+    }
+    &-number{
+        grid-area: container;
+        padding: 20px 10px;
+    }
+    &-note{
+        grid-area: footer;
+        height: 150px;
+        padding: 0px 0px 0px 10px;
+        margin-bottom: 50px;
+    }
+    &-click{
+        color: $color_white;
+        font-size: 16px;
+        font-weight: 600;
+        background-color: $color_main;
+        padding: 20px 37px;
+    }
+}

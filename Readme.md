@@ -21,3 +21,7 @@ sass ./sass/Posts/\_Main.scss ./css/posts.css --watch
 <!-- run sass CONNECT -->
 
 sass ./sass/Connect/_Main.scss ./css/connect.css --watch
+
+<!-- run sass CONTACT -->
+
+sass ./sass/Contact/_Main.scss ./css/contact.css --watch
